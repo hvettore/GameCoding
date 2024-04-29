@@ -11,12 +11,12 @@ namespace MOOOV
         // Define file paths for each color
         private static Dictionary<string, string> colorAudioPaths = new Dictionary<string, string>()
         {
-            {"black", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\black.mp3"},
-            {"yellow", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\yellow.mp3"},
-            {"red", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\red.mp3"},
-            {"blue", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\blue.mp3"},
-            {"green", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\green.mp3"},
-            {"white", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\white.mp3"}
+            {"black", @"C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\black.mp3"},
+            {"yellow", @"C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\yellow.mp3"},
+            {"red", @"C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\red.mp3"},
+            {"blue", @"C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\blue.mp3"},
+            {"green", @"C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\green.mp3"},
+            {"white", @"C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\white.mp3"}
         };
 
         public static void Main()
@@ -46,10 +46,13 @@ namespace MOOOV
                     break;
             }
 
+            // Initialize the sequence outside the loop
+            List<string> sequence = new List<string>();
+
             while (true)
             {
                 volatileSequenceDuration += startingSequenceDuration;
-                PlaySequence(sequenceLength, volatileSequenceDuration);
+                PlaySequence(sequence, sequenceLength, volatileSequenceDuration);
                 sequenceLength++;
 
                 Console.WriteLine("Press Enter to continue...");
@@ -83,24 +86,26 @@ namespace MOOOV
             return choice;
         }
 
-        public static void PlaySequence(int length, int duration)
+        public static void PlaySequence(List<string> sequence, int length, int duration)
         {
             string[] colors = { "black", "yellow", "red", "blue", "green", "white" };
-            List<string> sequence = new List<string>();
             Console.Clear();
             Console.WriteLine($"Get ready for round #{length}");
 
-            for (int i = 0; i < length; i++)
+            // Add a new color to the sequence
+            string randomColor;
+            do
             {
-                string randomColor;
-                do
-                {
-                    randomColor = FetchColor(colors, sequence);
-                } while (sequence.Count > 0 && sequence[sequence.Count - 1] == randomColor);
+                randomColor = FetchColor(colors, sequence);
+            } while (sequence.Count > 0 && sequence[sequence.Count - 1] == randomColor);
 
-                sequence.Add(randomColor);
-                Console.WriteLine(randomColor);
-                PlayAudio(randomColor);
+            sequence.Add(randomColor);
+
+            // Play the entire sequence
+            foreach (string color in sequence)
+            {
+                Console.WriteLine(color);
+                PlayAudio(color);
                 Thread.Sleep(1000);
             }
 

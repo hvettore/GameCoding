@@ -451,26 +451,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hugo\\.nuget\\packages\\": {}
+    "C:\\Users\\vetto\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\University\\UiA\\Semester 4\\Esports Practice 4\\GameCoding\\GameCoding.csproj",
+      "projectUniqueName": "C:\\Programming\\Semester 4\\Week 2\\GameCoding\\GameCoding.csproj",
       "projectName": "GameCoding",
-      "projectPath": "D:\\University\\UiA\\Semester 4\\Esports Practice 4\\GameCoding\\GameCoding.csproj",
-      "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-      "outputPath": "D:\\University\\UiA\\Semester 4\\Esports Practice 4\\GameCoding\\obj\\",
+      "projectPath": "C:\\Programming\\Semester 4\\Week 2\\GameCoding\\GameCoding.csproj",
+      "packagesPath": "C:\\Users\\vetto\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\Semester 4\\Week 2\\GameCoding\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\vetto\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -515,7 +513,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -21,3 +21,26 @@ D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\NAud
 D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\NAudio.WinMM.dll
 D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\obj\Debug\net8.0\GameCoding.csproj.Up2Date
 D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\obj\Debug\net8.0\GameCoding.sourcelink.json
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\GameCoding.exe
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\GameCoding.deps.json
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\GameCoding.runtimeconfig.json
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\GameCoding.dll
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\GameCoding.pdb
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\NAudio.dll
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\NAudio.Core.dll
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Programming\Semester 4\Week 2\GameCoding\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.csproj.AssemblyReference.cache
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.AssemblyInfoInputs.cache
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.AssemblyInfo.cs
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.csproj.CoreCompileInputs.cache
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.sourcelink.json
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.csproj.Up2Date
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.dll
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\refint\GameCoding.dll
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.pdb
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\GameCoding.genruntimeconfig.cache
+C:\Programming\Semester 4\Week 2\GameCoding\obj\Debug\net8.0\ref\GameCoding.dll
