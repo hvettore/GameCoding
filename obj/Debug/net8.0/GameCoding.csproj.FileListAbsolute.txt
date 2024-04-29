@@ -20,3 +20,4 @@ D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\NAud
 D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\NAudio.Wasapi.dll
 D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\NAudio.WinMM.dll
 D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\obj\Debug\net8.0\GameCoding.csproj.Up2Date
+D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\obj\Debug\net8.0\GameCoding.sourcelink.json

@@ -15,7 +15,8 @@ namespace MOOOV
             {"yellow", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\yellow.mp3"},
             {"red", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\red.mp3"},
             {"blue", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\blue.mp3"},
-            {"green", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\green.mp3"}
+            {"green", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\green.mp3"},
+            {"white", @"D:\University\UiA\Semester 4\Esports Practice 4\GameCoding\bin\Debug\net8.0\white.mp3"}
         };
 
         public static void Main()
@@ -84,7 +85,7 @@ namespace MOOOV
 
         public static void PlaySequence(int length, int duration)
         {
-            string[] colors = { "black", "yellow", "red", "blue", "green" };
+            string[] colors = { "black", "yellow", "red", "blue", "green", "white" };
             List<string> sequence = new List<string>();
             Console.Clear();
             Console.WriteLine($"Get ready for round #{length}");
