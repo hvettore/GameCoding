@@ -32,17 +32,23 @@ namespace MOOOV
             switch (difficulty)
             {
                 case 1:
-                    startingSequenceDuration = 4;
+                    startingSequenceDuration = 17;
                     break;
                 case 2:
-                    startingSequenceDuration = 3;
+                    startingSequenceDuration = 13;
                     break;
                 case 3:
-                    startingSequenceDuration = 2;
+                    startingSequenceDuration = 9;
+                    break;
+                case 4:
+                    startingSequenceDuration = 7;
+                    break;
+                case 5:
+                    startingSequenceDuration = 5;
                     break;
                 default:
                     Console.WriteLine("Invalid choice. Defaulting to normal difficulty.");
-                    startingSequenceDuration = 3;
+                    startingSequenceDuration = 13;
                     break;
             }
 
@@ -55,8 +61,8 @@ namespace MOOOV
                 PlaySequence(sequence, sequenceLength, volatileSequenceDuration);
                 sequenceLength++;
 
+                Thread.Sleep(2500);
                 Console.WriteLine("Press Enter to continue...");
-                Console.ReadLine();
                 Console.Clear();
             }
         }
@@ -78,8 +84,10 @@ namespace MOOOV
                 Console.WriteLine("1. Easy");
                 Console.WriteLine("2. Normal");
                 Console.WriteLine("3. Hard");
+                Console.WriteLine("4. Very Hard");
+                Console.WriteLine("5. Insane");
                 Console.Write("Enter your choice: ");
-                if (int.TryParse(Console.ReadLine(), out choice) && choice >= 1 && choice <= 3)
+                if (int.TryParse(Console.ReadLine(), out choice) && choice >= 1 && choice <= 5)
                     break;
                 Console.WriteLine("Invalid choice. Please enter a number between 1 and 3.");
             }
@@ -104,22 +112,27 @@ namespace MOOOV
             // Play the entire sequence
             foreach (string color in sequence)
             {
+                Thread.Sleep(600);
                 Console.WriteLine(color);
                 PlayAudio(color);
-                Thread.Sleep(1000);
             }
+            Thread.Sleep(700);
+            PlayBeep();
+            Thread.Sleep(100);
 
-            Console.WriteLine($"Starting countdown of {duration} seconds...");
+            Console.WriteLine($"Starting countdown...");
             for (int i = duration; i > 0; i--)
             {
-                Console.WriteLine(i);
-                Thread.Sleep(1000);
+                if(i % 10 == 0)
+                {
+                Console.WriteLine(i/10);
+                }
+                Thread.Sleep(100);
             }
 
             PlayBeep();
 
             Console.WriteLine("Time's up!");
-            Console.ReadLine();
         }
 
         public static string FetchColor(string[] colors, List<string> sequence)
